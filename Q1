@@ -1,0 +1,19 @@
+Prepare script to create table1 and table2 with primary key
+
+CREATE TABLE Department (
+  emp_id INT PRIMARY KEY,
+  dept_name VARCHAR(50) NOT NULL,
+  location VARCHAR(100)
+);
+
+
+CREATE TABLE Employee(
+  emp_id INT PRIMARY KEY,
+  first_name VARCHAR(50) NOT NULL,
+  last_name VARCHAR(50) NOT NULL,
+  email VARCHAR(60),
+  hire_date DATE,
+  job_title VARCHAR(50),
+  salary NUMBER(10,2),
+  dept_id INT
+);
